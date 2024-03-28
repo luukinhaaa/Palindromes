@@ -1,0 +1,21 @@
+<div class="container-fluid bg-secondary text-light py-4">
+  <label class="text-dark w-50 text-center">
+    <strong>Explicação:</strong> <br />
+    Um <strong>palíndromo</strong> é uma <strong>palavra</strong>,
+    <strong>frase</strong> ou <strong>sequência de caracteres</strong> que exibe
+    a <strong>propriedade notável</strong> de poder ser lida da mesma forma
+    <strong>para frente e para trás</strong>.
+  </label>
+  <input
+    type="text"
+    class="rounded mx-auto d-block m-2"
+    (ngModelChange)="reverse($event)"
+    [(ngModel)]="text"
+  />
+  <img
+    [src]="img"
+    class="rounded mx-auto d-block"
+    style="max-width: 250px; max-height: 250"
+  />
+  <h4 class="text-light">{{ result }}</h4>
+</div>
